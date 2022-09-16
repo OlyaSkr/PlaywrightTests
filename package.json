@@ -1,0 +1,23 @@
+{
+    "name": "playwright-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test",
+        "test:headed": "npx playwright test --headed",
+        "test:report": "npx playwright show-report",
+        "allure:serve": "npx allure serve allure-results",
+        "allure:generate": "npx allure generate allure-results --clean",
+        "test:debug": "npx playwright test --debug",
+        "test:codegen": "npx playwright codegen --output tests/generated.spec.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.25.2",
+        "allure-commandline": "^2.18.1",
+        "allure-playwright": "^2.0.0-beta.19"
+    }
+}
