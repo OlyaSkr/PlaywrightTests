@@ -33,7 +33,7 @@ test.describe("redmine page", () => {
         await signUpPage.submitButtonClick();
         await loginPage.flashNoticeIsVisible();
     });
-    test("sign in to redmine", async ({ page }) => {
+    test("sign in to redmine from home page", async ({ page }) => {
         await homePage.signInClick();
         await loginPage.usernameInputFill("Test__account");
         await loginPage.passwordInputFill("er23kl");
